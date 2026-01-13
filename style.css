@@ -693,12 +693,6 @@ body {
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
-  .main-container {
-    min-height: 70vh;
-    max-height: 800px;
-    margin-bottom: 40px;
-  }
-
   nav {
     position: absolute;
     top: 100%;
@@ -731,7 +725,7 @@ body {
     font-size: 22px;
   }
 
-  .welcome-section {
+  /* .welcome-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -742,7 +736,7 @@ body {
   .welcome-content {
     width: 50%;
     padding: 0 20px;
-  }
+  } */
 
   .welcome-content h1 {
     font-size: 2.4rem;
@@ -763,11 +757,12 @@ body {
   }
 
   .welcome-img {
-  width: 50%;
+  /* width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  display: none;
 }
 
   .welcome-img img {
