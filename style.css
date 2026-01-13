@@ -680,16 +680,11 @@ body {
   }
 }
 
-/* Medium screens: Tablets & small laptops */
 @media (min-width: 769px) and (max-width: 1200px) {
   .main-container {
     height: auto;
     margin-bottom: 40px;
   }
-
-  /* .welcome-section {
-    padding: 30px 5px;
-  } */
 
   nav {
     position: absolute;
