@@ -39,6 +39,7 @@ body {
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
   z-index: 0;
+  height: 100%;
 }
 
 .header {
@@ -182,8 +183,7 @@ body {
   height: 100%;
   object-fit: contain;
   filter:
-    drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4))
-    drop-shadow(0 0 40px rgba(128, 95, 248, 0.2));
+    drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 40px rgba(128, 95, 248, 0.2));
 }
 
 .about-img img {
@@ -270,11 +270,13 @@ body {
   background-color: var(--primary-light);
 }
 
-.download-cv-btn, .contact-form-btn {
+.download-cv-btn,
+.contact-form-btn {
   background-color: var(--primary-light);
 }
 
-.download-cv-btn:hover, .contact-form-btn:hover {
+.download-cv-btn:hover,
+.contact-form-btn:hover {
   background-color: var(--primary);
 }
 
@@ -693,6 +695,14 @@ body {
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
+  .main-container {
+    min-height: 70vh !important;
+  }
+
+  .main-container::before{
+    height: 100% !important;
+  }
+  
   nav {
     position: absolute;
     top: 100%;
@@ -725,18 +735,10 @@ body {
     font-size: 22px;
   }
 
-  /* .welcome-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 40px 40px 0;
-  }
-
   .welcome-content {
     width: 50%;
-    padding: 0 20px;
-  } */
+    padding: 20px 20px 0;
+  }
 
   .welcome-content h1 {
     font-size: 2.4rem;
@@ -757,13 +759,8 @@ body {
   }
 
   .welcome-img {
-  /* width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
-  display: none;
-}
+    display: none;
+  }
 
   .welcome-img img {
     width: 100%;
@@ -861,4 +858,3 @@ body {
     font-size: 16px;
   }
 }
-
