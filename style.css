@@ -724,7 +724,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding: 40px 40px;
+    padding: 40px 40px 0;
   }
 
   .welcome-content {
@@ -751,12 +751,12 @@ body {
   }
 
   .welcome-img {
-    width: 50%;
-    height: 420px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
   .welcome-img img {
     width: 100%;
