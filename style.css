@@ -680,15 +680,49 @@ body {
   }
 }
 
+/* Medium screens: Tablets & small laptops */
 @media (min-width: 769px) and (max-width: 1200px) {
+
+  /* Main container */
+  .main-container {
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .header-container {
+    padding: 15px 30px;
+  }
+
+  .logo {
+    width: 250px;
+    height: 40px;
+  }
+
+  .nav-links li a {
+    font-size: 22px;
+  }
+
   .welcome-section {
     flex-direction: row;
     padding: 40px 30px;
+    align-items: center;
   }
 
   .welcome-content {
     width: 60%;
-    padding: 0 30px;
+    padding: 0 20px;
+  }
+
+  .welcome-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .welcome-content p {
+    font-size: 1rem;
   }
 
   .welcome-img {
@@ -696,9 +730,14 @@ body {
     display: flex;
   }
 
+  .welcome-img img {
+    height: 80%;
+  }
+
   .about-section {
     flex-direction: row;
     gap: 30px;
+    margin-bottom: 40px;
   }
 
   .about-img {
@@ -710,19 +749,30 @@ body {
     width: 55%;
   }
 
+  .about-content h2 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
   .services {
     flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
   }
 
   .service {
     width: 45%;
     height: 220px;
+    padding: 15px 20px;
   }
 
   .skills-section {
     flex-direction: row;
     gap: 20px;
+    justify-content: center;
   }
 
   .skills-img {
@@ -735,8 +785,43 @@ body {
     max-width: none;
   }
 
+  .skills-content h2 {
+    font-size: 24px;
+  }
+
+  .skills-content p {
+    font-size: 13px;
+  }
+
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
     padding: 40px 30px;
   }
+
+  .project {
+    height: 380px;
+  }
+
+  .project-overlay h3 {
+    font-size: 1.3em;
+  }
+
+  .project-overlay p {
+    font-size: 0.9em;
+  }
+
+  .footer-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 30px;
+  }
+
+  .footer-links i {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
 }
+
