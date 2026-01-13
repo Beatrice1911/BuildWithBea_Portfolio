@@ -679,3 +679,64 @@ body {
     text-align: center;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .welcome-section {
+    flex-direction: row;
+    padding: 40px 30px;
+  }
+
+  .welcome-content {
+    width: 60%;
+    padding: 0 30px;
+  }
+
+  .welcome-img {
+    width: 40%;
+    display: flex;
+  }
+
+  .about-section {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .about-img {
+    width: 40%;
+    height: 400px;
+  }
+
+  .about-content {
+    width: 55%;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .service {
+    width: 45%;
+    height: 220px;
+  }
+
+  .skills-section {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .skills-img {
+    width: 40%;
+    height: 250px;
+  }
+
+  .skills-content {
+    width: 55%;
+    max-width: none;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 40px 30px;
+  }
+}
